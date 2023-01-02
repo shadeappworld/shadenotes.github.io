@@ -1,0 +1,23 @@
+{
+  "name": "Shade Notes",
+  "version": "1.0.0",
+  "description": "A simple, powerful sticky notes app from Shade Software!",
+  "main": "myscripts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sw-precache": "sw-precache"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tharunShiv/stick-it-notes.git"
+  },
+  "author": "Lufuno",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shadeappworld/shadenotes/issues"
+  },
+  "homepage": "https://github.com/shadeappworld/shadenotes#readme",
+  "dependencies": {
+    "sw-precache": "^5.2.1"
+  }
+}
