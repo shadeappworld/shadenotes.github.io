@@ -71,7 +71,8 @@
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
   const analytics = getAnalytics(app);
-</script>
+</script><script> if (typeof navigator.serviceWorker !== 'undefined') { navigator.serviceWorker.register('sw.js') } </script>
+
 
 
 </body>
