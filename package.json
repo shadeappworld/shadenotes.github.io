@@ -1,23 +1,24 @@
 {
-  "name": "Shade Notes",
+  "name": "svelte-app",
   "version": "1.0.0",
-  "description": "A simple, powerful sticky notes app from Shade Software!",
-  "main": "myscripts.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "sw-precache": "sw-precache"
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "start": "sirv public"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/tharunShiv/stick-it-notes.git"
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^11.0.0",
+    "@rollup/plugin-node-resolve": "^7.0.0",
+    "rollup": "^1.20.0",
+    "rollup-plugin-livereload": "^1.0.0",
+    "rollup-plugin-svelte": "^5.0.3",
+    "rollup-plugin-terser": "^5.1.2",
+    "svelte": "^3.0.0",
+    "svelte-grid": "^1.10.7"
   },
-  "author": "Lufuno",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/shadeappworld/shadenotes/issues"
-  },
-  "homepage": "https://github.com/shadeappworld/shadenotes#readme",
   "dependencies": {
-    "sw-precache": "^5.2.1"
+    "jquery": "^3.4.1",
+    "quill": "^1.3.7",
+    "sirv-cli": "^0.4.4"
   }
 }
