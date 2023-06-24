@@ -13,7 +13,6 @@ body {
     color: #263238;
     scrollbar-width: thin;
     scrollbar-color: #212121 #fff8e1;
-    text-align: center;
 }
 
 ::-webkit-scrollbar {
