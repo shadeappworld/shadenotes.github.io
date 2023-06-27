@@ -15,7 +15,31 @@
       "type": "image/png"
     }
   ],
-  "theme_color": "#ffd31d",
+  "theme_color": "#1dff43",
   "background_color": "#333",
-  "display": "standalone"
+  "display": "standalone",
+  "description": "Shade Notes Go is an app designed for on-the-go note-taking. It includes the feature of Predictive Notes, which predicts what the user may want to write next. It is also offline-capable and can be used without an internet connection.",
+  "dir": "auto",
+  "lang": "en",
+  "orientation": "portrait",
+  "categories": [
+    "entertainment",
+    "personalization"
+  ],
+  "shortcuts": [
+    {
+      "name": "Focus",
+      "url": "focus.html",
+      "description": "Your personal focus session"
+    }
+  ],
+  "share_target": {
+    "method": "GET",
+    "action": "/",
+    "params": {
+      "text": "new-note-body-input",
+      "title": "new-note-title-input",
+      "url": "index.html"
+    }
+  }
 }
