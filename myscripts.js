@@ -61,7 +61,7 @@ let createNoteFromInput = (e) => {
   window.localStorage.setItem("count", count);
 
   while (window.localStorage.getItem(noteTitle)) {
-    noteTitle = noteTitle + "✌️";
+    noteTitle = noteTitle + "- again.";
   }
   window.localStorage.setItem(noteTitle, noteBody);
 
@@ -101,6 +101,15 @@ for (i = 0; i < count + 1; i++) {
   }
 }
 
-document
+{ document
   .getElementById("inputForm")
   .addEventListener("submit", createNoteFromInput, false);
+  }
+  
+window.addEventListener('DOMContentLoaded', () => {
+  const parsedUrl = new URL(window.location);
+  const sharedTitle = parsedUrl.searchParams.get('new-note-title-input');
+  const sharedText = parsedUrl.searchParams.get('new-note-body-input');
+
+  // Do something with the parsed data
+});
