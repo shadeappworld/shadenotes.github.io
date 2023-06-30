@@ -18,8 +18,7 @@ It's ready for you, and it's powerful enough to make your notes experience much 
   <meta name="author" content="Shade Software">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-	<title>Shade Notes</title>
-
+	
 	<link rel="apple-touch-icon" sizes="57x57" href="./media/icons-web-app/apple-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="./media/icons-web-app/apple-icon-60x60.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="./media/icons-web-app/apple-icon-72x72.png">
@@ -132,28 +131,15 @@ It's ready for you, and it's powerful enough to make your notes experience much 
   const app = initializeApp(firebaseConfig);
   const analytics = getAnalytics(app);
 </script>
-<div class="circle-popup">
-    <div class="chat-icon">💬</div>
-    <div class="popup-content">
-      
-      <iframe id="popup-iframe" src="https://pwalist.app/"></iframe>
-    </div>
-  </div>
-<script>
-    // Get the necessary DOM elements
-    var circlePopup = document.querySelector('.circle-popup');
-    var popupContent = document.querySelector('.popup-content');
-    var closeBtn = document.querySelector('.close-btn');
-
-    // Function to toggle the popup
-    function togglePopup() {
-      popupContent.style.display = popupContent.style.display === 'none' ? 'block' : 'none';
-    }
-
-    // Add event listeners to the elements
-    circlePopup.addEventListener('click', togglePopup);
-    closeBtn.addEventListener('click', togglePopup);
-  </script>
+<script src="/js/embed.js" type="text/javascript"></script>
+            <script>
+        window.DeadSimpleChat.initBubble({
+            location: "https://deadsimplechat.com",
+        size: "small",
+            roomId: "t32ZkFogA",
+            open: "false"
+        })
+    </script>
 
 </body>
 </html
